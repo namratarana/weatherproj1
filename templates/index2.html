@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Use your current location</title>
+	</head>	
+
+
+	<body style="background-image:url(https://cdn1.vectorstock.com/i/1000x1000/04/55/weather-background-vector-20455.jpg ); background-repeat: no-repeat center ;
+				 background-size: contain; background-attachment: fixed;">
+			<center>
+			
+			<fieldset style="margin-left: 450px;margin-right: 400px;margin-bottom: 400px;margin-top: 150px; padding-top: 4em;   padding-bottom: 2em;">
+			<legend ><font size="5"> Enter your Locations</font></legend>
+			<form action ="{{ url_for('web3') }}"  method = "POST">
+				<font size="5">
+				<label style=" padding-right: 20px;">LATITUDE</label>
+				<input  type="number" name="Latitude" style="height:20px;width:200px;" placeholder="Enter latitude here..." >
+				<br>
+				<br>`
+			
+
+				<label style= "padding-right: 10px">LONGITUDE</label>
+				<input type="number" name="Longitude" style="height:20px;width:200px;" placeholder="Enter longitude here..." >
+				<br>           
+				<br>
+
+				<button type="number"><font size="2"> Submit</button></font><br>
+				</font>
+			</form><br>
+		
+			<button onclick="getLocation()"><font size="2"> Know your location points</button></font>
+			<p id="demo"></p>
+			<script>
+			
+			
+			function getLocation() {
+			  if (navigator.geolocation) {
+			  	
+			    navigator.geolocation.getCurrentPosition(showPosition);
+			    
+				} 
+			 else { 
+			    x = "Geolocation is not supported by this browser.";
+			  }
+			}
+
+			function showPosition(position) 
+			{
+			 
+			  var x = "latitude: " + position.coords.latitude + 
+			  "<br>longitude: " + position.coords.longitude;
+			  var new_page = window.open();
+  			  new_page.document.write(x);
+			  
+
+			}
+			</script>
+			</fieldset>
+			<br>
+			<br>
+			<br>
+
+			
+
+			
+		
+
+		</center>
+
+
+	</body>
+	</html>

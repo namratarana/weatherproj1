@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<style type="text/css">
+
+		 
+		.div1 {
+			margin-left: 580px;
+			margin-top: 30x;
+			margin-bottom: 10px;
+  			width: 200px;
+ 		 	height: 30px;
+  			border: 1px solid blue;
+  			border-radius: 30px;
+  			font-size: 20px;
+  			padding-top: 10px;
+  			text-align: center;
+  			box-shadow: 2px 2px 10px black;
+
+  			
+
+		}
+		.main{
+
+			padding-left: 150px;
+			padding-top: 50px;
+			
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.cards{
+			margin-left:  15px;
+			width: 8%;
+			background-color: pink;
+			border-radius: 10px;	
+			box-shadow: 2px 2px  10px black;	
+			display: inline-block;
+		}
+
+		.image img{
+			width: 50%;
+			padding-left: 25px;
+			padding-top: 2px;
+		}
+
+		body{
+			font-family: georgia;
+		}
+
+		.title{
+			padding-top: 8px;
+			padding-bottom: 2px;
+			text-align: center;
+			background-color:  yellow;
+			font-size: 15px;
+		}
+		.des{
+			text-align: center;
+			background-color: orange;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding-top: 4px;
+			padding-bottom: 8px;
+			font-size: 12px;
+		}
+		 .circle {
+		 	display:block;
+		 	margin-left: 640px;
+		 	margin-right: auto;
+		 	margin-top: 80px;
+      		width: 7%;
+      		height: 12%;
+      		background: #E5FFCC;
+      		border-radius: 50%;
+
+      	}
+
+      	.circle img{	
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+  			margin-top: 100px;
+  			width: 100%;
+			
+			
+		}
+
+
+	</style>
+	
+
+	<body style="background:url(https://cdn1.vectorstock.com/i/1000x1000/04/55/weather-background-vector-20455.jpg);background-repeat: no-repeat center; background-size: contain; background-attachment: fixed;">
+		
+		<div class="circle">
+			<img src="http://openweathermap.org/img/w/{{i}}.png">
+		</div>
+
+		<div class="div1">{{k}}</div>
+
+
+		<div class="main"> 
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/min temp.png">
+			</div>
+			<div class="title">
+				Minimum Temperature
+			</div>
+			<div class="des">
+				{{a}} &#xb0 C;
+			</div>	
+		</div>
+		
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/max temp.png">
+			</div>
+			<div class="title">
+				Maximum Temperature
+			</div>
+			<div class="des">
+				{{b}} &#xb0 C;
+			</div>	
+		</div>
+
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/humidity.png">
+			</div>
+			<div class="title">
+				<br>
+				Humidity
+			</div>
+			<div class="des">
+				{{c}}%
+			</div>	
+		</div>
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/pressure.png">
+			</div>
+			<div class="title"><br>
+				Pressure
+			</div>
+			<div class="des">
+				{{d}} hPa
+			</div>	
+		</div>
+
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/wind.png">
+			</div>
+			<div class="title"><br>
+				Wind
+			</div>
+			<div class="des">
+				{{e}} m/s
+			</div>	
+		</div>
+		
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/clouds.png">
+			</div>
+			<div class="title"><br>
+				Cloudliness
+			</div>
+			<div class="des">
+				{{f}}%
+			</div>	
+		</div>
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/sunrise.png">
+			</div>
+			<div class="title">
+				Sunrise
+			</div>
+			<div class="des">
+				{{g}}
+			</div>	
+		</div>
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/sunset.png">
+			</div>
+			<div class="title">
+				Sunset
+			</div>
+			<div class="des">
+				{{h}}
+			</div>	
+		</div>
+
+		<div class="cards">
+			<div class="image">
+				<img src="static/avg temp.png">
+			</div>
+			<div class="title">
+				Average Temperature
+			</div>
+			<div class="des">
+				{{j}} &#xb0 C;
+			</div>	
+		</div>
+
+
+		</div>
+
+
+</body>
+</html> 

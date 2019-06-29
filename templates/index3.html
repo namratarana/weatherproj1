@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style= "background:url(https://cdn1.vectorstock.com/i/1000x1000/04/55/weather-background-vector-20455.jpg);background-repeat: no-repeat center; 
+				background-size: contain;background-attachment: fixed;">
+	<center>
+		<fieldset style="margin-left: 450px;margin-right: 400px;margin-bottom: 400px;margin-top: 200px; padding-top: 0.5em;
+  padding-bottom: 1em;padding-left: 1px;padding-right: 1px;">
+			<legend><font size="5"> Enter your Pincode</font></legend><br><br>
+			<form action="{{ url_for('web5') }}" method="POST">
+				<font size="5">
+				<label >PINCODE</label>
+				<input type="number" name="Pincode"  style="height:20px;width:200px;"maxlength="10" placeholder="Enter your pincode here..." ><br><br>
+				<input type="submit" name="Submit">
+				</font>
+			</form>
+		</fieldset>
+	</center>
+</body>
+</html>

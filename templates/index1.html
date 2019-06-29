@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather Website</title>
+    </head> 
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        .html,
+        .body {
+          height: 100%;
+          font-weight: 800;
+        }
+
+        .body {
+          background: #030321;
+          font-family: Arial;
+        }
+
+        svg {
+          display: block;
+          font: 10.5em "Montserrat";
+          width: 1000px;
+          height: 300px;
+          margin: 0 auto;
+          font-size: 100px;
+        }
+
+        .text-copy {
+          fill: none;
+          stroke: white;
+          stroke-dasharray: 6% 29%;
+          stroke-width: 5px;
+          stroke-dashoffset: 0%;
+          animation: stroke-offset 5.5s infinite linear;
+        }
+
+        .text-copy:nth-child(1) {
+          stroke: #4d163d;
+          animation-delay: -1s;
+        }
+
+        .text-copy:nth-child(2) {
+          stroke: #840037;
+          animation-delay: -2s;
+        }
+
+        .text-copy:nth-child(3) {
+          stroke: #bd0034;
+          animation-delay: -3s;
+        }
+
+        .text-copy:nth-child(4) {
+          stroke: #bd0034;
+          animation-delay: -4s;
+        }
+
+        .text-copy:nth-child(5) {
+          stroke: #fdb731;
+          animation-delay: -5s;
+        }
+
+        @keyframes stroke-offset {
+          100% {
+            stroke-dashoffset: -35%;
+          }
+        }
+        </style>
+
+    
+    <body style="background-image:url(https://cdn1.vectorstock.com/i/1000x1000/04/55/weather-background-vector-20455.jpg ); background-repeat: no-repeat center ;
+                 background-size: contain; background-attachment: fixed;">
+    <center>
+            <br>
+            <br>
+            <br>
+                <svg viewBox="0 100 900 300">
+                <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="97%">WeatherExpert</text>
+                </symbol>
+
+        <g class = "g-ants">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+</svg>
+            
+            <font size="6px">----Know weather via----</font><br>
+                            
+                            <font size="5px">
+                                <a href= "{{ url_for('web2') }}">Use your Geographic Location </a> <br>
+                            </font><br>
+                                
+                            <font size="5px">  Or
+                            </font><br><br>
+
+                           
+                            <font size="5px">   
+                                <a href="{{ url_for('web4') }}">Use your Zipcode/PIN code/Postal code </a>
+                            </font>
+                        
+
+
+    </center>
+    </body>
+    </html>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<html>
+<head>
+	<title>WeatherWebsite</title>'
+    <meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'index1.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename= 'all.js')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'all.css')}}">
+    
+
+</head>
+	<body link ="white"> 
+        <div class = "container">
+    		<div class = "app">
+    			<div class = "header">
+    				<img src="/static/img1.jpeg"alt="">
+    				<span class ="headline">
+    					WEATHERWEBSITE
+
+                   
+    				
+                        <input type="submit" name="stateslist">
+                    </form>
+                   
+                         <span class="icons">
+                            <i class="fas fa-sun"></i>
+                         
+                           
+
+                             <span class = "Links">
+                        <ul>
+                                know weather via
+                            <li link = "white">
+                                <a href= "{{ url_for('web2') }}">Use your Geographic Location </a> <br><br>
+                                or <br>
+                                <a href="{{ url_for('web4') }}">Use your Zipcode/PIN code/Postal code </a>
+                            </li>
+                        </ul>
+                            </span>
+                </div></div>
+    	</div>
+	</body>
+</html>
+
+
